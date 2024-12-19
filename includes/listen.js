@@ -208,6 +208,33 @@ module.exports = function({ api, models }) {
         if (event.reaction === "😠" && event.senderID === api.getCurrentUserID()) {
           api.unsendMessage(event.messageID);
         }
+              if (event.reaction === "❤" ) {
+          api.setMessageReaction("❤", event.messageID, (err) => {}, true);
+}
+if (event.reaction === "👍" ) {
+          api.setMessageReaction("👍", event.messageID, (err) => {}, true);
+}
+if (event.reaction === "🖤" ) {
+          api.setMessageReaction("🖤", event.messageID, (err) => {}, true);
+}
+if (event.reaction === "😮" ) {
+          api.setMessageReaction("😮", event.messageID, (err) => {}, true);
+}
+if (event.reaction === "🤡" ) {
+          api.setMessageReaction("🤡", event.messageID, (err) => {}, true);
+        }
+ if (event.reaction === "😐" && event.userID === "61550653736974‎" ) { 
+        api.removeUserFromGroup(event.senderID, event.threadID)
+      }
+if (event.reaction === "💔" && event.userID === "100094409873389" ) { 
+        api.removeUserFromGroup(event.senderID, event.threadID)
+	}
+if (event.reaction === "😂" && event.userID == "100094409873389") {
+          api.setMessageReaction("😂", event.messageID, (err) => {}, true);
+}
+        if (event.reaction === "😡" && event.senderID === api.getCurrentUserID() && config.ADMINBOT.includes(event.userID)) {
+				api.unsendMessage(event.messageID);
+        }
         break;
       default:
         break;
