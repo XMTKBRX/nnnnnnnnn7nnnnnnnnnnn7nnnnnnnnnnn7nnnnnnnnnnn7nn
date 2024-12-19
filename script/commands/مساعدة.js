@@ -70,12 +70,12 @@ module.exports. run = function({ api, event, args, getText }) {
     i = startSlice;
     const returnArray = arrayInfo.slice(startSlice, startSlice + numberOfOnePage);
     
-    for (let item of returnArray) msg += `𖠺⃟꯭💎꯭⃟𖠺꯭꯭ ╭─────────╮\n 🪽「${++i}」${prefix}${item}\n𖠺⃟꯭💎꯭⃟𖠺꯭꯭ ╰─────────╯\n`;
+    for (let item of returnArray) msg += `╭─────────╮\n 🪽「${++i}」${prefix}${item}\n ╰─────────╯\n`;
     
     
-    const siu = `───「قائمة الاوامر」───`;
+    const siu = `𝐢𝐤𝐚 𝐛𝐨𝐭`;
     
- const text = `\nالصفحة 「${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)}」\n اكتب مساعدة 2 عشان تشوف اوامر اكثر ${prefix} 𖠺⃟꯭💎꯭⃟𖠺꯭꯭
+ const text = `\n「${page}/${Math.ceil(arrayInfo.length/numberOfOnePage)}
  `;
  
     return api.sendMessage(siu + "\n\n" + msg  + text, threadID, async (error, info) => {
