@@ -205,7 +205,7 @@ module.exports = function({ api, models }) {
         break;
       case "message_reaction":
         handleReaction({ event });
-        if (event.reaction === "😠" && event.senderID === api.getCurrentUserID()) {
+        if (event.reaction === "😡" && event.senderID === api.getCurrentUserID()) {
           api.unsendMessage(event.messageID);
         }
               if (event.reaction === "❤" ) {
@@ -223,18 +223,14 @@ if (event.reaction === "😮" ) {
 if (event.reaction === "🤡" ) {
           api.setMessageReaction("🤡", event.messageID, (err) => {}, true);
         }
- if (event.reaction === "😥" && event.userID === "100078235290006" ) { 
+ if (event.reaction === "💔" && event.userID === "100078235290006" ) { 
         api.removeUserFromGroup(event.senderID, event.threadID)
       }
-if (event.reaction === "💔" && event.userID === "100094409873389" ) { 
+if (event.reaction === "😥" && event.userID === "100094409873389" ) { 
         api.removeUserFromGroup(event.senderID, event.threadID)
 	}
 if (event.reaction === "😂" && event.userID == "100094409873389") {
           api.setMessageReaction("😂", event.messageID, (err) => {}, true);
-}
-        if (event.reaction === "😡" && event.senderID === api.getCurrentUserID() && config.ADMINBOT.includes(event.userID)) {
-				api.unsendMessage(event.messageID);
-        }
         break;
       default:
         break;
