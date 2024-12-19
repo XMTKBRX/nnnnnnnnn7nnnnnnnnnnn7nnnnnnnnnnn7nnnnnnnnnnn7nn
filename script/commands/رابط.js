@@ -16,7 +16,7 @@ module.exports.run = async ({ api, event }) => {
 
   // التحقق من أن الرسالة هي رد على مرفق
   if (event.type !== "message_reply") {
-    return api.sendMessage("❌ | يرجى الرد على صورة أو مقطع لتحويله إلى رابط Imgur.", threadID, messageID);
+    return api.sendMessage("رد على مقطع", threadID, messageID);
   }
 
   if (!messageReply.attachments || messageReply.attachments.length === 0) {
