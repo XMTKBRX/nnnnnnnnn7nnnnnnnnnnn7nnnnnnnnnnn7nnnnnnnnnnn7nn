@@ -2,7 +2,7 @@
 <h1>الـمـطـور عـمـر</h1>
 
 <p align="center">
-    <img align="center" alt="PNG" src="https://i.imgur.com/Gvp4imE.jpeg" />
+    <img align="center" alt="PNG" src="https://i.imgur.com/HV8d7Va.jpeg" />
 
 
 
