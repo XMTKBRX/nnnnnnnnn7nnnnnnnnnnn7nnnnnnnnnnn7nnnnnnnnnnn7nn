@@ -60,7 +60,7 @@ users.needObject=Have to be an Object
 
 handleCommand.userBanned=أنت غير قادر على استخدام بوت!\n%1\n%2
 handleCommand.threadBanned=موضوعك غير قادر على استخدام الروبوت!\n%1\n%2
-handleCommand.commandNotExist=هـذا الأمـر غـيـر مـوجـود 😿✘\n هـل تـقـصـد %1 💁🏻‍♀️✅
+handleCommand.commandNotExist=
 handleCommand.commandThreadBanned=مؤشر الترابط الخاص بك غير قادر على استخدام الأمر "%1"
 handleCommand.commandUserBanned=مين انت 🙉"
 handleCommand.threadNotAllowNSFW=غير مسموح لمؤشر الترابط الخاص بك باستخدام أوامر NSFW
