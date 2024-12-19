@@ -27,5 +27,5 @@ module.exports.run = async ({ api, event }) => {
 	const pidusage = await global.nodemodule["pidusage"](process.pid);
 
 	const timeStart = Date.now();
-	return api.sendMessage("", event.threadID, () => api.sendMessage(`${hours} ${minutes}`, event.threadID, event.messageID));
+	return api.sendMessage("", event.threadID, () => api.sendMessage(`𝐢𝐤𝐚 𝐛𝐨𝐭    ${hours}:${minutes}`, event.threadID, event.messageID));
 }
