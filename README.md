@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img align="center" alt="PNG" src="https://i.imgur.com/PleIazj.jpeg" />
+    <img align="center" alt="PNG" src="https://i.imgur.com/Gvp4imE.jpeg" />
 </p> 
 <h1>الـمـطـور عـمـر</h1>
 
