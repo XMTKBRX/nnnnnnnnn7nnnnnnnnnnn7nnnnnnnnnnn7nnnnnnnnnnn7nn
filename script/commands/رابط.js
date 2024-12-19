@@ -1,41 +1,49 @@
 module.exports.config = {
-  name: "🙈",
-  version: "1",
+  name: "رابط",
+  version: "1.0.0",
   hasPermssion: 0,
-  credits: "عمر",
-  description: "روابط مختصرة للصور التي تُرفق بها",
-  usePrefix: false,
-  commandCategory: "خدمات",
-  usages: "[رد على صور]",
+  credits: "ᎥᎿᏃ ᎠᎯᏒᏦ", // API by smfahim
+  description: "الحصول على رابط Imgur من المرفقات (صورة، مقطع، أو GIF)",
+  commandCategory: "قــســم الــادوات",
+  usages: "رابط (رد على صورة)",
   cooldowns: 5,
-  dependencies: {
-    "axios": ""
-  }
 };
 
+const axios = require("axios");
+
 module.exports.run = async ({ api, event }) => {
-  const axios = global.nodemodule['axios'];
-  let links = [];
+  const { messageReply, threadID, messageID } = event;
 
-  if (event.type === "message_reply" && event.messageReply.attachments.length > 0) {
-    for (const attachment of event.messageReply.attachments) {
-      links.push(attachment.url);
-    }
-  } else if (event.attachments.length > 0) {
-    for (const attachment of event.attachments) {
-      links.push(attachment.url);
-    }
-  } else {
-    return api.sendMessage('قم بالرد على الصور التي تريد روابطها', event.threadID, event.messageID);
+  // التحقق من أن الرسالة هي رد على مرفق
+  if (event.type !== "message_reply") {
+    return api.sendMessage("❌ | يرجى الرد على صورة أو مقطع لتحويله إلى رابط Imgur.", threadID, messageID);
   }
 
-  const shortenedLinks = [];
-
-  for (const link of links) {
-    const res = await axios.get(`https://bot.api-johnlester.repl.co/imgur?link=${encodeURIComponent(link)}`);
-    shortenedLinks.push(res.data.uploaded.image);
+  if (!messageReply.attachments || messageReply.attachments.length === 0) {
+    return api.sendMessage("❌ | لا يوجد مرفقات لتحويلها إلى رابط Imgur.", threadID, messageID);
   }
 
-  const formattedLinks = shortenedLinks.map(link => ` "${link}",`).join('\n');
-  return api.sendMessage(` ${formattedLinks}`, event.threadID, event.messageID);
+  try {
+    let num = 0;
+    let msg = `${messageReply.attachments.length}`;
+
+    // معالجة كل المرفقات
+    for (const attachment of messageReply.attachments) {
+      const apiUrl = `https://smfahim.xyz/imgur?url=${encodeURIComponent(attachment.url)}`;
+      const response = await axios.get(apiUrl);
+      
+      if (response.data?.uploaded?.status === "success") {
+        num++;
+        msg += `${num}: ${response.data.uploaded.image}\n`;
+      } else {
+        msg += `${num + 1}: ❌ فشل في تحويل الرابط: ${attachment.url}\n`;
+      }
+    }
+
+    // إرسال الرسالة النهائية
+    api.sendMessage(msg, threadID, messageID);
+  } catch (error) {
+    console.error("Error processing attachments:", error);
+    api.sendMessage("❌ | حدث خطأ أثناء معالجة المرفقات. يرجى المحاولة مرة أخرى.", threadID, messageID);
+  }
 };
