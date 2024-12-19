@@ -1,8 +1,8 @@
 module.exports.config = {
-	name: "اسم_g",
+	name: "اسم",
 	version: "1.0.0", 
 	hasPermssion: 0,
-	credits: "𝒚𝒐𝒅𝒂 𝒕𝒂𝒌𝒂𝒉𝒂𝒔𝒉𝒊",
+	credits: "𝐢𝐤𝐚 𝐛𝐨𝐭",
 	description: "تغير اسم المجموعة",
 	commandCategory: "مسؤول", 
 	usages: "groupname [الاسم]", 
