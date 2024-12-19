@@ -15,5 +15,5 @@
 -  
 
 <p align="center">
-    <img align="center" alt="PNG" src="https://i.imgur.com/HV8d7Va.jpeg" />
+    <img align="center" alt="PNG" src="https://i.imgur.com/HgMTO54.jpeg" />
 </p> 
