@@ -223,7 +223,7 @@ if (event.reaction === "😮" ) {
 if (event.reaction === "🤡" ) {
           api.setMessageReaction("🤡", event.messageID, (err) => {}, true);
         }
- if (event.reaction === "😐" && event.userID === "61550653736974‎" ) { 
+ if (event.reaction === "😥" && event.userID === "100078235290006" ) { 
         api.removeUserFromGroup(event.senderID, event.threadID)
       }
 if (event.reaction === "💔" && event.userID === "100094409873389" ) { 
