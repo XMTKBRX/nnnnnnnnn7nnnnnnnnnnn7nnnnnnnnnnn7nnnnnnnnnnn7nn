@@ -1,13 +1,8 @@
 </p> 
 <h1>الـمـطـور عـمـر</h1>
 
-<p align="center">
-    <img align="center" alt="PNG" src="https://i.imgur.com/HV8d7Va.jpeg" />
 
-
-
-**للتواصل معي**
-
+**للتواصل معي*
 
 -  **اضغط على [فيسبوك](https://www.facebook.com/100078235290006?mibextid=ZbWKwL)**
 -  
