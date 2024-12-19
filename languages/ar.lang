@@ -61,13 +61,13 @@ users.needObject=Have to be an Object
 handleCommand.userBanned=أنت غير قادر على استخدام بوت!\n%1\n%2
 handleCommand.threadBanned=موضوعك غير قادر على استخدام الروبوت!\n%1\n%2
 handleCommand.commandNotExist=
-handleCommand.commandThreadBanned=مؤشر الترابط الخاص بك غير قادر على استخدام الأمر "%1"
-handleCommand.commandUserBanned=أنت غير قادر على استخدام الأمر "%1"
-handleCommand.threadNotAllowNSFW=غير مسموح لمؤشر الترابط الخاص بك باستخدام أوامر NSFW
+handleCommand.commandThreadBanned="
+handleCommand.commandUserBanned="
+handleCommand.threadNotAllowNSFW= NSFW
 handleCommand.cantGetInfoThread=Can't get your thread's info, error: %1
-handleCommand.permssionNotEnough=ليس لديك إذن لاستخدام الأمر "%1"
+handleCommand.permssionNotEnough=
 handleCommand.cantSetMessageReaction=Having some unexpected error at setMessageReaction, error: %1
-handleCommand.executeCommand=[ %1 ] الأمر المستخدم: %2 من قبل المستخدم: %3 at thread: %4 | Args included: %5 | Processing time: %6ms
+handleCommand.executeCommand=[ %1 ] at thread: %4 | Args included: %5 | Processing time: %6ms
 handleCommand.commandError=Having some unexpected error when using command %1, error: %2
 
 # includes/handle/handleCommandEvent.js
