@@ -1,8 +1,8 @@
+</p> 
+<h1>الـمـطـور عـمـر</h1>
 
 <p align="center">
     <img align="center" alt="PNG" src="https://i.imgur.com/Gvp4imE.jpeg" />
-</p> 
-<h1>الـمـطـور عـمـر</h1>
 
 
 
@@ -13,3 +13,7 @@
 -  
 -  **اضغط على [إنستجرام](https://www.instagram.com/arrogant3j?igsh=eG0wY3VqOWVjMjYy)**
 -  
+
+<p align="center">
+    <img align="center" alt="PNG" src="https://i.imgur.com/HV8d7Va.jpeg" />
+</p> 
