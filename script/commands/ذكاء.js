@@ -12,7 +12,7 @@ async function chat(messages) {
 
 const aa = {
     config: {
-        name: "ika",
+        name: "بنتي",
         version: "1.0.0",
         hasPermssion: 0,
         credits: "Takt Asahina",
@@ -26,9 +26,9 @@ const aa = {
         const coj = args.join(" ");
         if (!coj) {
             const responses = [
-                "شبدك",
-                "تفضل",
-                "حـاضــرة 🙈",
+                "",
+                "",
+                "",
                 "مين انت 🙉"
             ];
             const randomResponse = responses[Math.floor(Math.random() * responses.length)];
