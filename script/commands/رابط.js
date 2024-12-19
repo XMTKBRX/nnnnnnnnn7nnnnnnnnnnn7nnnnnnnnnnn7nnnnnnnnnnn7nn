@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "في رابط",
+  name: "🙈",
   version: "1",
   hasPermssion: 0,
   credits: "عمر",
