@@ -80,7 +80,7 @@ module.exports.run = async function({ api, event, args }) {
         imgabc.push(o);
       }
       var msg = {
-        body: `► 𝗣𝗜𝗡𝗧𝗘𝗥𝗘𝗦𝗧\n\n${name} - ${number}`,
+        body: `𝐢𝐤𝐚 𝐛𝐨𝐭\n\n${name} - ${number}`,
         attachment: imgabc
       };
       return api.sendMessage(msg, event.threadID, event.messageID);
