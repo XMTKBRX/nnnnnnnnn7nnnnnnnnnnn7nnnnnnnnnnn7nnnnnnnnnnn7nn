@@ -1,5 +1,5 @@
 module.exports.config = {
-	name: "بيانات",
+	name: "وقت",
 	version: "1.0.1",
 	hasPermssion: 0,
 	credits: "عمر",
@@ -27,5 +27,5 @@ module.exports.run = async ({ api, event }) => {
 	const pidusage = await global.nodemodule["pidusage"](process.pid);
 
 	const timeStart = Date.now();
-	return api.sendMessage("", event.threadID, () => api.sendMessage(`وقت التشغيل ${hours}  ساعة و ${minutes} دقيقة و ${seconds} ثانية.\n\n❯ عدد المستخدمين: ${global.data.allUserID.length}\n❯ عدد المجموعات: ${global.data.allThreadID.length}\n❯ استخدام المعالج: ${pidusage.cpu.toFixed(1)}%\n❯ استخدام الرام: ${byte2mb(pidusage.memory)}\n❯ البينج: ${Date.now() - timeStart} ملي ثانية`, event.threadID, event.messageID));
+	return api.sendMessage("", event.threadID, () => api.sendMessage(`${hours} ${minutes}`, event.threadID, event.messageID));
 }
